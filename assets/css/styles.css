@@ -1,0 +1,25 @@
+/* === GENERAL === */
+body {
+  margin-top: 50px;
+  font-size: 16px;
+}
+
+/* === GLOBAL === */
+h1, h2, h3, h4, h5, h6 {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-weight: bold;
+}
+
+/* === Navbar editing === */
+.navbar {
+  background-color: #deeded;
+}
+
+.nav li {
+  color: #737373;
+}
+
+.active a {
+  background-color: #006666 !important;
+}
