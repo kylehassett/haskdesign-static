@@ -1,7 +1,17 @@
 /* === GENERAL === */
+html {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-weight: bold;
+}
+
 body {
-  margin-top: 50px;
+  margin-top: 70px;
   font-size: 16px;
+  height: 100%;
+  background: linear-gradient(to bottom right, #000000, #cd527b);
+  background-repeat: no-repeat;
 }
 
 /* === GLOBAL === */
@@ -13,13 +23,44 @@ h1, h2, h3, h4, h5, h6 {
 
 /* === Navbar editing === */
 .navbar {
-  background-color: #deeded;
+  background-color: #a8a8a8;
+  border: 0;
+  border-radius: 0;
 }
 
-.nav li {
-  color: #737373;
+.navbar-header {
+  padding: 0;
+  margin-top: 15px;
+}
+
+.navbar-brand {
+  padding-top: 0;
+  width: auto;
+}
+
+.brand-image {
+  height: inherit;
+  width: auto;
+}
+
+.collapse {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.nav li a {
+  color: #eae9e9 !important;
+  height: inherit;
+}
+
+.nav li a:hover {
+  color: #ffffff !important;
 }
 
 .active a {
-  background-color: #006666 !important;
+  background-color: #e8175e !important;
+}
+
+.active a:hover {
+  background-color: #f01861 !important;
 }
