@@ -4,11 +4,14 @@ html {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-weight: bold;
+  box-sizing: border-box;
 }
 
 body {
+  position: relative;
   height: 100%;
-  background-image: linear-gradient(135deg, #4F0036, #FF009C);
+  padding-bottom: 6rem;
+  background-image: linear-gradient(135deg, #3B002A, #8F0066);
   background-repeat: no-repeat;
   -webkit-transition-property: all;
   -webkit-transition-duration: 0.08s;
@@ -23,9 +26,16 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   text-align: center;
+  color: white;
+  line-height: 150%;
+  font-family: 'Hind', sans-serif;
 }
 
 /* === Navbar editing === */
+.navbar-wrapper {
+  height: 25px;
+}
+
 .navbar {
   background: none;
   border: 0;
@@ -35,16 +45,10 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-brand {
   text-align: center;
   margin-top: 10px;
-  font-family: verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: lighter;
   font-size: 48px;
   color: white !important;
-  -webkit-transition-property: all;
-  -webkit-transition-duration: 0.08s;
-  -webkit-transition-timing-function: linear;
-  transition-property: all;
-  transition-duration: 0.08s;
-  transition-timing-function: linear;
 }
 
 #border-item {
@@ -76,6 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav li a {
+  font-family: 'Roboto', sans-serif;
   color: #eae9e9 !important;
   height: inherit;
 }
@@ -108,5 +113,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-area {
   background-color: rgba(59, 0, 42, 0.5);
+}
 
+/* === Footer === */
+.footer {
+  top: auto;
+  text-align: left;
+  bottom: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  color: #a6a6a6;
 }

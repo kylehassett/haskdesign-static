@@ -2,14 +2,14 @@ var fonts = ["verdana", "arial", "helvetica", "courier new", "courier",
              "trebuchet", "arial black", "impact"];
 var time;
 var count = 0;
-var lastFont = 0;
+var lastFont = 10;
 var angle = 135;
 
 document.addEventListener('DOMContentLoaded', function() {
     var backgroundTimer = setInterval(function(){
-      angle = angle + 2;//getRandomInt(1);
+      angle = (angle % 360) + 3;//getRandomInt(1);
       document.getElementById('htmlBody').style.backgroundImage = "linear-gradient(" + angle + "deg, #3B002A, #8F0066)";
-    }, 100);
+    }, 75*3);
     timer();
 }, false);
 
@@ -53,8 +53,8 @@ function timer() {
 
 function setBack(time) {
   time = setTimeout(function(){
-    document.getElementById('site-name').style.fontFamily = fonts[0];
-    lastFont = 0;
+    document.getElementById('site-name').style.fontFamily = '\'' + 'Roboto' + '\'' + ', sans-seriff';
+    lastFont = 10;
   }, time);
 }
 
